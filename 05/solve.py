@@ -16,7 +16,7 @@ for line in f:
             if (line[i - 1] != ' '):
                 list[i // 4].append(line[i])
     elif line != '\n':
-        line = [int(x.strip()) for x in re.split("['move' | 'from' | 'to']", line) if x.strip()]
+        line = [int(x.strip()) for x in re.split(r"move | from | to ", line) if x.strip()]
         temp = []
         for i in range(0, line[0]):
             temp.insert(0, list[line[1] - 1].pop(0))
