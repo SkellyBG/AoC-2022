@@ -12,9 +12,11 @@ for line in f:
     if line == '\n':
         flag = True
     if not flag:
-        for i in range(1, 36, 4):
-            if (line[i - 1] != ' '):
-                list[i // 4].append(line[i])
+        _ = [list[i//4].append(c) for i, c in enumerate(line) if c.strip() and c not in ["[", "]"]] 
+
+        # for i in range(1, 36, 4):
+        #     if (line[i - 1] != ' '):
+        #         list[i // 4].append(line[i])
     elif line != '\n':
         line = [int(x.strip()) for x in re.split(r"move | from | to ", line) if x.strip()]
         temp = []
