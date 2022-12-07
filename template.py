@@ -1,7 +1,5 @@
 #!/bin/python3
 
-
-
 def nums(line) -> list:
     return [int(x) for x in line if x.strip()]
 
