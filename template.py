@@ -1,6 +1,8 @@
 #!/bin/python3
 import re
 
+dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
 def nums(line) -> list:
     return [int(x) for x in line if x.strip()]
 
