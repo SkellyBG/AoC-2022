@@ -46,7 +46,7 @@ def part1():
 
 
 def part2():
-    f = open("input.txt", "r")
+    f = open("test.txt", "r")
     matrix = []
     for line in f:
         row = []
