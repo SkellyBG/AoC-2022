@@ -61,7 +61,6 @@ def part2():
                 pc = 0
                 print()
             registers[0] += int(line[1])
-    print(count)
 
 part1()
 part2()
