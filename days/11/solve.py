@@ -84,6 +84,7 @@ def part1():
                     
                 monkey_count[monkey] += 1
             list.clear()
+    print("Part 1: ")
     for i, count in enumerate(monkey_count):
         print(f"Monkey {i} inspected items {count} times.")
 
@@ -165,8 +166,10 @@ def part2():
                     
                 monkey_count[monkey] += 1
             list.clear()
+    print("Part 2: ")
     for i, count in enumerate(monkey_count):
         print(f"Monkey {i} inspected items {count} times.")
 
 part1()
+print()
 part2()
