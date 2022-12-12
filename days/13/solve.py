@@ -6,15 +6,16 @@ dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 def nums(line) -> list[int]:
     return [int(x) for x in line if x.strip()]
 
-def part1() -> None:
+def part1():
     f = open("input.txt", "r")
     for line in f:
-        line = line.rstrip("\n")
+        pass
 
-def part2() -> None:
+
+def part2():
     f = open("input.txt", "r")
     for line in f:
-        line = line.rstrip("\n")
+        pass
 
 part1()
 part2()
