@@ -1,5 +1,6 @@
 #!/bin/python3
 import re
+import functools
 
 dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 
