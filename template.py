@@ -4,7 +4,7 @@ import functools
 
 dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 
-def nums(line) -> list[int]:
+def nums(line) -> list:
     return [int(x) for x in line if x.strip()]
 
 def part1() -> None:
